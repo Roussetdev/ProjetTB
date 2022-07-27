@@ -55,3 +55,12 @@ function clickbtn9(){
         }
     }
 }
+
+// Moyenne
+
+var bouton10= document.getElementById("Id_btn10");
+bouton10.addEventListener("click",clickbtn10);
+
+function clickbtn10(){
+    //
+}
