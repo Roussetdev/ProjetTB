@@ -30,3 +30,28 @@ function clickbtn8(){
     }
 
 }
+
+// Entier inférieurs à N
+
+var bouton9= document.getElementById("Id_btn9");
+bouton9.addEventListener("click",clickbtn9);
+
+function clickbtn9(){
+
+    p=0;
+    var N = prompt("Veuillez saisir votre nombrte N");
+    if(N==null){
+        alert("Vous avez cliqué sur Annuler");
+    }
+    else{
+        console.log("Voici le nombre N que vous avez saisi: "+N);
+        alert("Vérifiez en Console (F12), ce que vous venez de saisir...");
+        while(p<N){
+            if (p==N){
+                break;
+            }
+            console.log("Ligne : "+p );
+            p++;
+        }
+    }
+}
