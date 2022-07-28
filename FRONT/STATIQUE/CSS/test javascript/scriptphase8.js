@@ -62,5 +62,26 @@ var bouton10= document.getElementById("Id_btn10");
 bouton10.addEventListener("click",clickbtn10);
 
 function clickbtn10(){
-    //
+    cpt = 0; 
+    somme = 0.0; 
+ 
+    /* Boucle de traitement */ 
+    do {
+
+        nblu = parseFloat(prompt("Nombre (0 pour finir) : ")); 
+        cpt = cpt + 1; 
+        somme = somme + parseFloat(nblu);  
+    } while (nblu != 0) 
+ 
+    /* Affichage du résultat */ 
+    if (cpt == 1) { 
+        document.write("Aucun nombre n'a été saisi"); 
+    } else {
+        console.log("somme : " + somme);
+        moyenne = somme / (cpt-1); 
+        alert("Moyenne : "+ moyenne); 
+        console.log("moyenne : " + moyenne);
+    }
 }
+
+// Multiples
