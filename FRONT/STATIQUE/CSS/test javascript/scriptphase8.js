@@ -85,3 +85,20 @@ function clickbtn10(){
 }
 
 // Multiples
+
+var bouton11= document.getElementById("Id_btn11");
+bouton11.addEventListener("click",clickbtn11);
+
+function clickbtn11(){
+    var n=0;
+    var x = prompt("Veuillez saisir un nombre");
+
+    do {
+        resultat = x  * n;
+        console.log(x + " * "+ n +" = " + resultat);
+        n++;
+    } while (n <= 10) ;
+
+    // instructions exécutées après le for (i vaut 10)
+    console.log("fin de la boucle");
+}
