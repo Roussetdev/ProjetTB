@@ -102,3 +102,31 @@ function clickbtn11(){
     // instructions exécutées après le for (i vaut 10)
     console.log("fin de la boucle");
 }
+
+// Nombres de voyelles
+
+var bouton12= document.getElementById("Id_btn12");
+bouton12.addEventListener("click",clickbtn12);
+
+function clickbtn12(){
+    const v = ["a", "e", "i", "o", "u"]; // tableau pour les voyelles
+
+function countv(str) {      // fonction compter le nombre de voyelles
+    let nbr = 0;
+
+    for (let lettre of str.toLowerCase()) {
+        if (v.includes(lettre)) {
+            nbr++;
+        }
+    }
+
+    return nbr;
+}
+
+
+const mot = prompt('Veuillez saisir un mot : ');
+
+const resultat = countv(mot);
+
+console.log("Nombre de voyelles : " + resultat);
+}
