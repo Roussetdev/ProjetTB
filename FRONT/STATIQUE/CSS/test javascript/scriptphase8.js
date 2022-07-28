@@ -109,24 +109,22 @@ var bouton12= document.getElementById("Id_btn12");
 bouton12.addEventListener("click",clickbtn12);
 
 function clickbtn12(){
-    const v = ["a", "e", "i", "o", "u"]; // tableau pour les voyelles
-
-function countv(str) {      // fonction compter le nombre de voyelles
-    let nbr = 0;
-
-    for (let lettre of str.toLowerCase()) {
-        if (v.includes(lettre)) {
-            nbr++;
+    // tableau pour les voyelles
+    const v = ["a", "e", "i", "o", "u"]; 
+    // fonction compter le nombre de voyelles
+    function countv(str) {      
+        let nbr = 0;
+        // recherche de voyelles
+        for (let lettre of str.toLowerCase()) {
+            if (v.includes(lettre)) {
+                nbr++;
+            }
         }
+        return nbr;
     }
-
-    return nbr;
-}
-
-
-const mot = prompt('Veuillez saisir un mot : ');
-
-const resultat = countv(mot);
-
-console.log("Nombre de voyelles : " + resultat);
+    // Entrer le mot et affichage du résultat
+    const mot = prompt('Veuillez saisir un mot : ');
+    const resultat = countv(mot);
+    console.log("Nombre de voyelles : " + resultat);
+    alert("Nombre de voyelles : " + resultat);
 }
