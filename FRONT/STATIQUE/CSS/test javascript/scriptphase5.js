@@ -1,4 +1,5 @@
 // exercice phase 5
+
 var reponse1 = window.prompt("Entrez votre nom");
 console.log(reponse1);
 var reponse2 = window.prompt("Entrez votre prenom");

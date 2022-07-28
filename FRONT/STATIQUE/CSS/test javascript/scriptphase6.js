@@ -1,4 +1,5 @@
 // exercice phase 6
+
 let a = "100";
 console.log(a);
 let b = 100;
