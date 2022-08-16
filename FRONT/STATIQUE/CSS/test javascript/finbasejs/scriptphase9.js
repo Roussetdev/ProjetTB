@@ -22,4 +22,5 @@ function clickbtn1(){
     // recherche d'une div et affichage des resultats
     document.getElementById("phrases").innerHTML = "<div>Le cube de "+ x +" est égal à " + resultat1 +" <br/>Le produit de " + x  + "*" +  y + " est égal à  "+ resultat2+"</div>"; 
 }
+
 // String Token
