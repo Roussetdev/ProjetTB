@@ -1,4 +1,4 @@
-// Exercice phase 9 
+// Exercices phase 9 
 
 // exercice 1
 var bouton1= document.getElementById("Id_btn1");
