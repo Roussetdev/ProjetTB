@@ -24,3 +24,25 @@ function clickbtn1(){
 }
 
 // String Token
+
+var bouton2= document.getElementById("Id_btn2");
+bouton2.addEventListener("click",clickbtn2);
+
+function clickbtn2(){
+
+    function splitString(stringToSplit, separator) {
+        var n = stringToSplit.split(separator);
+      
+        console.log(`La chaine d'origine est : ${stringToSplit}`);
+        console.log(`Le délimiteur est : ${separator}`);
+        console.log(`Le tableau comporte ${n.length} elements : `, n.join(' / '));
+      }
+      
+
+      var str1 = "robert ;dupont ;amiens ;80000";
+
+      var str2 = ";";
+      
+
+      splitString(str1, str2);
+}
