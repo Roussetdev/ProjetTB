@@ -16,11 +16,11 @@
             age = prompt("Entrez un âge "); 
             console.log(age);
                 //ajout d'une personne jeune
-            if (age <= 20){
+            if (age < 20){
                 jeune = jeune +1;
                 console.log(jeune);
             }   //ajout d'une personne mature
-            else if(age > 20 && age <= 40){
+            else if(age >= 20 && age <= 40){
                 mature = mature + 1;
                 console.log(mature);
             }   //ajout d'une personne assez vieux
