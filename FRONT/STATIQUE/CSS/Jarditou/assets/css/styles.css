@@ -40,6 +40,29 @@ footer{
     background-color: dimgrey;
     width: 50%;
 }
+
+/* Formulaire eval js */
+
+label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=date], input[type=email], select, textarea {
+    width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.valid{
+    border: 1px solid #ccc;
+}
+
+/* Version Mobile*/
 @media screen and (max-width: 768px) {
     html{
         font-size: 100%;
