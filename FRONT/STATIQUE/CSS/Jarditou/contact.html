@@ -38,7 +38,7 @@
         <h1>Contact</h1>
         <hr>
 
-        <!--Le debut de mon formulaire-->
+        <!-- Le debut de mon formulaire -->
         <form action="http://bienvu.net/script.php" method="POST" id="contact" name="contact" novalidate>
 
             <!-- Premiere Partie -->
@@ -46,30 +46,30 @@
             <fieldset>
                 <legend>Vos coordonnées</legend>
                 <label for="nom">Votre nom* : </label><input class="valid" type="text" name="nom" id="nom" required>
-                <div class="msg" style="color: red;" id="invalid-nom"></div><br>
+                <div style="color: red;" id="invalid-nom"></div><br>
 
                 <label for="prenom">Votre prénom* : </label><input class="valid" type="text" name="prenom" id="prenom" required>
-                <div class="msg" style="color: red;" id="invalid-prenom"></div><br>
+                <div style="color: red;" id="invalid-prenom"></div><br>
 
                 <span>Sexe* : </span>
                 <input type="radio" name="sexe" id="Feminin" value="Feminin" required><label for="Feminin"> Féminin</label>
                 <input type="radio" name="sexe" id="Masculin" value="Masculin" required><label for="Masculin"> Masculin</label>
-                <div class="msg" style="color: red;" id="invalid-sexe"></div><br>
+                <div style="color: red;" id="invalid-sexe"></div><br>
 
                 <label for="date">Date de naissance* : </label><input class="valid" type="date" name="date" id="date" required>
-                <div class="msg" style="color: red;" id="invalid-date"></div><br>
+                <div style="color: red;" id="invalid-date"></div><br>
 
                 <label for="codepostal">Code postal* : </label><input class="valid" type="text" name="codepostal" id="codepostal" required>
-                <div class="msg" style="color: red;" id="invalid-codepostal"></div><br>
+                <div style="color: red;" id="invalid-codepostal"></div><br>
 
                 <label for="adresse">Adresse : </label><input class="valid" type="text" name="adresse" id="adresse" required>
-                <div class="msg" style="color: red;" id="invalid-adresse"></div><br>
+                <div style="color: red;" id="invalid-adresse"></div><br>
 
                 <label for="ville">Ville : </label><input class="valid" type="text" name="ville" id="ville" required>
-                <div class="msg" style="color: red;" id="invalid-ville"></div><br>
+                <div style="color: red;" id="invalid-ville"></div><br>
 
                 <label for="email">Email* : </label><input class="valid" type="email" name="email" placeholder="Entrez votre email" pattern="^[a-z]+$" required title="Entrez votre email" id="email" required><br>
-                <div class="msg" style="color: red;" id="invalid-email"></div>
+                <div style="color: red;" id="invalid-email"></div>
                 
             </fieldset>
 
@@ -87,25 +87,25 @@
                     <option value="Autres">Autres</option>
 
                 </select>
-                <div class="msg" style="color: red;" id="invalid-sujet"></div><br>
+                <div style="color: red;" id="invalid-sujet"></div><br>
 
                 <span>Votre question* : </span><textarea rows="2" cols="25" class="valid" name="question" id="question" required></textarea>
-                <div class="msg" style="color: red;" id="invalid-question"></div>
+                <div  style="color: red;" id="invalid-question"></div>
 
             </fieldset>
 
-            <!-- envoi et vérification-->
+            <!-- envoi et vérification -->
 
             <input type="checkbox" name="accepted" id="accepted" value=true required> * J'accepte le traitement informatique de ce formulaire
             <!-- si ce n'est pas cocher -->
-            <div class="msg" style="color: red;" id="invalid-accepted"></div><br>
+            <div style="color: red;" id="invalid-accepted"></div><br>
 
             <input type="submit" value="Envoyer">
 
             <input type="reset" value="Annuler">
             
         </form>
-        <!--Fin de mon formulaire-->
+        <!-- Fin de mon formulaire -->
 
     </div>
 
@@ -123,6 +123,6 @@
 </footer>
 
 <!-- fichier javascript -->
-<script src="/BOOTSTRAP/Jarditou/assets/js/script.js"></script>
+<script src="/CSS/Jarditou/assets/js/script.js"></script>
 </body>
 </html>
