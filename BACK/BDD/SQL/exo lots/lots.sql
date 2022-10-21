@@ -58,10 +58,34 @@ join reservation on res_cha_id = cli_id
 join chambre on cha_id = res_cha_id
 join hotel on hot_id = cha_hot_id
 
---Lot 3.13
-select hot_nom, sta_nom, COUNT()
+--Lot 3.13 
+select hot_nom, sta_nom, COUNT(*)
 from hotel 
 join station on hot_sta_id = sta_id
 group by sta_nom
 
---Lot 3.14
+--Lot 3.14 
+select sta_nom, count(*) as 'nombredechambre'
+from chambre
+join hotel on hot_id = cha_hot_id
+join station on sta_id = hot_sta_id
+group by sta_nom
+
+--Lot 3.15 
+select sta_nom, count(*) as 'nombredechambre'
+from chambre
+join hotel on hot_id = cha_hot_id
+join station on sta_id = hot_sta_id
+where cha_capacite > 1
+group by sta_nom
+
+--Lot 3.16
+select distinct cli_nom, hot_nom
+from reservation
+join chambre on res_cha_id = cha_id
+join hotel on hot_id = cha_hot_id
+join client on cli_id = res_cli_id
+where cli_nom like 'squire'
+
+--Lot 3.17
+select 
