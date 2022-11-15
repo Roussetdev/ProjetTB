@@ -88,4 +88,10 @@ join client on cli_id = res_cli_id
 where cli_nom like 'squire'
 
 --Lot 3.17
-select 
+select  sta_nom, floor(avg(DATEDIFF(res_date_fin, res_date_debut))) as 'durée moyenne des réservation'
+from client
+join reservation on res_cha_id = cli_id
+join chambre on cha_id = res_cha_id
+join hotel on hot_id = cha_hot_id 
+join station on sta_id = hot_sta_id 
+ 
